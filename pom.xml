@@ -26,15 +26,16 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				<cloudhubDeployment>
+				<cloudHubDeployment>
+				<uri>https://anypoint.mulesoft.com/</uri>
 				<username>ritika007</username>
-				<environment>DEV</environment>
+				<environment>SANDBOX</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
 				<applicationName>hello-world-service</applicationName>
 				<password>Gapinc01#</password>
-				<muleVersion>4.1.4</muleVersion>
-				</cloudhubDeployment>
+				<muleVersion>${mule.version}</muleVersion>
+				</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
